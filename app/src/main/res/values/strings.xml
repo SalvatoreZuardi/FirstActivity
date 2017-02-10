@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FirstActivity</string>
+    <string name="titolo">Titolo</string>
+    <string name="sottotitolo">Sottotitolo</string>
+    <string name="data">Data</string>
+    <string name="leggi">Leggi</string>
+    <string name="email">E-mail:</string>
+    <string name="passw">Password:</string>
+    <string name="login">Login</string>
+    <string name="text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac risus nisl. Curabitur blandit, libero non semper maximus, leo felis sollicitudin arcu, vitae varius eros sem a lacus. Aliquam at semper leo. Morbi facilisis diam libero. Integer vulputate augue nec orci viverra, viverra tincidunt mi finibus. Vestibulum commodo orci eu.</string>
+    <string name="text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac risus nisl. Curabitur blandit, libero non semper maximus, leo felis sollicitudin arcu, vitae varius eros sem a lacus. Aliquam at semper leo. Morbi facilisis diam libero. Integer vulputate augue nec orci viverra, viverra tincidunt mi finibus. Vestibulum commodo orci eu.</string>
+</resources>
