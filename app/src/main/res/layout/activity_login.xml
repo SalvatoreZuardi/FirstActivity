@@ -14,6 +14,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
+            android:id="@+id/login_username_et"
             android:textSize="30dp"
             android:gravity="start"/>
         <EditText
@@ -21,6 +22,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/passw"
             android:textSize="30dp"
+            android:id="@+id/login_password_et"
             android:inputType="textPassword"
             android:gravity="start"/>
 
@@ -30,16 +32,15 @@
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:background="@color/colorPrimary">
 
-        <TextView
+        <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
-            android:textSize="30dp"
-            android:background="@color/colorPrimary"
-            android:textColor="@android:color/white"
-            android:text="@string/login"
-            android:id="@+id/textView" />
+            android:text="Login"
+            android:id="@+id/login_btn"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:textColor="@android:color/white"/>
     </LinearLayout>
 </LinearLayout>
