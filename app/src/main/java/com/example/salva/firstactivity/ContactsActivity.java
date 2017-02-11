@@ -32,7 +32,7 @@ public class ContactsActivity extends Activity {
 
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_VIEW);
-                Uri uri = Uri.parse("geo:0,07q="+ addressTV.getText().toString());
+                Uri uri = Uri.parse("geo:0,0?q="+ addressTV.getText().toString());
                 intent.setData(uri);
                 startActivity(intent);
             }
