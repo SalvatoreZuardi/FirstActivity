@@ -16,6 +16,7 @@ public class LoginActivity extends Activity{
     EditText username_ET;
     EditText password_ET;
 
+
     Button login_btn;
 
     View.OnClickListener loginClickListener = new View.OnClickListener() {
@@ -28,6 +29,7 @@ public class LoginActivity extends Activity{
                     Toast.makeText(LoginActivity.this, R.string.toast, Toast.LENGTH_LONG).show();
                 }
                 Intent intent = new Intent(LoginActivity.this, ContactsActivity.class);
+                intent.putExtra("email",username);
                 startActivity(intent);
                 finish();
             }

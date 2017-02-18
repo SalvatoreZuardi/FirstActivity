@@ -1,103 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<LinearLayout
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_orange_light"
+    android:layout_gravity="center"
+    android:id="@+id/contacts_layout">
 
-    android:layout_margin="20dp">
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="start"
-        android:background="@android:color/holo_orange_light">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:textColor="@android:color/white"
-            android:text="@string/nome"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:textColor="@android:color/white"
-            android:text="@string/cognome"
-            android:id="@+id/textView" />
-
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    <TextView
+        android:id="@+id/business_cards_rv"
+        android:layout_height="match_parent"/>
+
+    <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/corso"
-        android:gravity="start"
-        android:layout_weight="3"
-        android:textSize="30dp"
-        android:textColor="@android:color/white"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/date"
-            android:textSize="30dp"
-            android:textColor="@android:color/white"/>
-    </LinearLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/via"
-        android:id="@+id/AddressTV"
-        android:textSize="30dp"
-        android:textColor="@android:color/white"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Tel1"
-        android:id="@+id/phoneNumberTV"
-        android:textSize="30dp"
-        android:textColor="@android:color/white"/>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
-        android:text="@string/Call"
-        android:textSize="30dp"
-        android:id="@+id/button_call"
-        android:layout_gravity="end"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
-        android:text="@string/GO"
-        android:textSize="30dp"
-        android:id="@+id/go_button"
-        android:layout_gravity="start"/>
-     <Button
-         android:layout_width="match_parent"
-         android:layout_height="match_parent"
-         android:text="@string/mail"
-         android:textSize="30dp"
-         style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
-         android:id="@+id/email_button"/>
-    </LinearLayout>
+        android:id="@+id/add_student"
+        android:src="@drawable/ic_plus"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:layout_alignParentRight="true"
+        />
 
-
-
-
-
-</LinearLayout>
-</ScrollView>
+</RelativeLayout>

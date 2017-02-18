@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+
+        android:layout_margin="20dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:background="@android:color/holo_orange_light">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:id="@+id/username_TV"
+                android:textColor="@android:color/white"/>
+                <!--android:text="@string/nome"-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="@android:color/white"
+
+                android:id="@+id/textView" />
+            <!--android:text="@string/cognome"-->
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/corso"
+                android:gravity="start"
+                android:layout_weight="3"
+                android:textSize="30dp"
+                android:id="@+id/course_TV"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textSize="30dp"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/via"
+            android:id="@+id/AddressTV"
+            android:textSize="30dp"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ind_email"
+            android:textSize="30dp"
+            android:textColor="@android:color/white"
+            android:id="@+id/ind_email"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Tel1"
+            android:id="@+id/phoneNumberTV"
+            android:textSize="30dp"
+            android:textColor="@android:color/white"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                android:text="@string/Call"
+                android:textSize="30dp"
+                android:id="@+id/button_call"
+                android:layout_gravity="end"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                android:text="@string/GO"
+                android:textSize="30dp"
+                android:id="@+id/go_button"
+                android:layout_gravity="start"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/share"
+                android:textSize="30dp"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                android:id="@+id/send_button"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/info"
+                android:textSize="30dp"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                android:id="@+id/info_button"/>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
